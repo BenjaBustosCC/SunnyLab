@@ -1,0 +1,16 @@
+.carousel-container {
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-container .swiper {
+  padding: 40px 0; /* espacio arriba/abajo para ver los costados */
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 800px;       /* ajusta la altura a tu diseño */
+  object-fit: cover;   /* recorta sin deformar */
+  border-radius: 12px;
+}

@@ -1,0 +1,125 @@
+.sm-userCard {
+    display: flex;
+    align-items: center;
+    color: #fef3ce;
+    font-size: .8rem;
+    justify-content: space-between;
+    width:25%;
+}
+.sm-userCard-avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.sm-userCard-header{
+    display: flex;
+    align-items: center;
+}
+
+.sm-userCard-info{
+    margin-left: 10px;
+}
+.sm-userCard-name{      
+    font-size: 20px;
+    font-weight: bold;
+}
+.sm-userCard-username{
+    font-size: 18px;
+    color: #b3b3b3;
+    display: block;
+}
+
+.sm-userCard-button{
+    margin-left: 10px;
+    background: white;
+    color: black;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sm-social-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.sm-social-button-instagram {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sm-social-icon-instagram {
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+
+.sm-social-button-instagram:hover .sm-social-icon-instagram {
+    filter: invert(36%) sepia(91%) saturate(6242%) hue-rotate(322deg) brightness(97%) contrast(101%);
+}
+
+.sm-social-button-youtube {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sm-social-icon-youtube {
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+
+.sm-social-button-youtube:hover .sm-social-icon-youtube {
+    filter: invert(21%) sepia(88%) saturate(7486%) hue-rotate(357deg) brightness(97%) contrast(108%);
+}
+
+.sm-social-button-tiktok {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sm-social-icon-tiktok {
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+
+.sm-social-button-tiktok:hover .sm-social-icon-tiktok {
+    filter: invert(0%) sepia(97%) saturate(7470%) hue-rotate(293deg) brightness(97%) contrast(107%);
+}
+
+.sm-social-button-spotify {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sm-social-icon-spotify {
+    width: 24px;
+    height: 24px;
+    filter: invert();
+}
+
+.sm-social-button-spotify:hover .sm-social-icon-spotify {
+    filter: invert(58%) sepia(76%) saturate(2164%) hue-rotate(97deg) brightness(92%) contrast(88%);
+}
+
+.sm-social-buttons button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+.sm-social-buttons button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease;
+}
