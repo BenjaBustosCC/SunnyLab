@@ -47,3 +47,8 @@
     color: #FEF3CE;
     cursor: pointer;
 }
+
+.header-label.active {
+  color: #FEF3CE; /* el color cuando está activa */
+  border-bottom: 2px solid #FEF3CE; /* opcional, subrayado */
+}
