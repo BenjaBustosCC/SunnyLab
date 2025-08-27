@@ -1,0 +1,52 @@
+.services-container {
+  padding: 80px 20px;
+  background-color: #111; /* contraste con el carrusel */
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.services-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #FEF3CE;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 siempre 3 por fila en escritorio */
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 👈 en tablet, 2 por fila */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 👈 en móvil, 1 por fila */
+  }
+}
+
+.service-card {
+  background: #222;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+  color: #FEF3CE;
+}
