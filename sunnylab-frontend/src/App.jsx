@@ -12,8 +12,7 @@ function App() {
   return (
     <div className='App'>
       <Header/>
-
-      <Element name="hero" className="element-container">
+      <Element name="hero" className="element-container" style={{paddingTop: '130px'}}>
         <Hero/>
         <Carousel/>
       </Element>

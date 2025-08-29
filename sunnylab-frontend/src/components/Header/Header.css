@@ -4,7 +4,7 @@
     left: 0;            
     width: 100%;    
     height: 130px;
-    background: #222;
+  background: linear-gradient(to right, #26294C, #591335, #E3916B);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +49,6 @@
 }
 
 .header-label.active {
-  color: #FEF3CE; /* el color cuando está activa */
-  border-bottom: 2px solid #FEF3CE; /* opcional, subrayado */
+  color: #FEF3CE;
+  border-bottom: 2px solid #FEF3CE;
 }

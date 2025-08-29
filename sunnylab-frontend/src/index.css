@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #222;
+  background: linear-gradient(to right, #26294C, #591335, #E3916B);
   font-family: system-ui;
   min-height: 100vh;
   display: flex;
