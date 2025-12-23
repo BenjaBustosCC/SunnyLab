@@ -1,11 +1,24 @@
 import './Header.css'
 import { Link } from "react-scroll";
 
-export function Header() {
+export function Header({ isAdmin, setIsAdmin }) {
+  const handleLogin = () => {
+    if (isAdmin) {
+      setIsAdmin(false);
+    } else {
+      const password = prompt("Ingrese contraseña de administrador:");
+      if (password === "admin123") {
+        setIsAdmin(true);
+      } else if (password !== null) {
+        alert("Contraseña incorrecta");
+      }
+    }
+  };
+
   return (
     <header className='header'>
       <div className='logo-container'>
-        <img className='header-logo' src="/SunnyLab/logosl.png" alt="logo Sunny Lab" />
+        <img className='header-logo' src={`${import.meta.env.BASE_URL}logosl.png`} alt="logo Sunny Lab" />
       </div>
       <div className='header-labels'>
         <Link

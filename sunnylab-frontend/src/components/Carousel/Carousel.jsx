@@ -30,7 +30,7 @@ function Carousel() {
       >
         <SwiperSlide>
           <div className="slide-content">
-            <img src="/estudio1.JPG" alt="Estudio SunnyLab" />
+            <img src={`${import.meta.env.BASE_URL}estudio1.JPG`} alt="Estudio SunnyLab" />
             <div className="carousel-text">
               <h2>Composición</h2>
             </div>
@@ -38,7 +38,7 @@ function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content">
-            <img src="/estudio2.JPG" alt="Producción musical" />
+            <img src={`${import.meta.env.BASE_URL}estudio2.JPG`} alt="Producción musical" />
             <div className="carousel-text">
               <h2>Producción Musical</h2>
             </div>
@@ -46,7 +46,7 @@ function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content">
-            <img src="/estudio3.JPG" alt="Clases" />
+            <img src={`${import.meta.env.BASE_URL}estudio3.JPG`} alt="Clases" />
             <div className="carousel-text">
               <h2>Musica para artes visuales</h2>
             </div>
@@ -54,7 +54,7 @@ function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content">
-            <img src="/estudio3.JPG" alt="Clases" />
+            <img src={`${import.meta.env.BASE_URL}estudio3.JPG`} alt="Clases" />
             <div className="carousel-text">
               <h2>Academia</h2>
             </div>
@@ -62,7 +62,7 @@ function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content">
-            <img src="/estudio3.JPG" alt="Clases" />
+            <img src={`${import.meta.env.BASE_URL}estudio3.JPG`} alt="Clases" />
             <div className="carousel-text">
               <h2>Podcast</h2>
             </div>

@@ -11,28 +11,28 @@ import { Element } from "react-scroll";
 function App() {
   return (
     <div className='App'>
-      <Header/>
-      <Element name="hero" className="element-container" style={{paddingTop: '130px'}}>
-        <Hero/>
-        <Carousel/>
+      <Header />
+      <Element name="hero" className="element-container" style={{ paddingTop: '130px' }}>
+        <Hero />
+        <Carousel />
       </Element>
 
       <Element name="services" className="element-container">
-        <Services/>
+        <Services />
       </Element>
 
       <Element name="technical-specs" className="element-container">
-        <TechnicalSpecs/>
+        <TechnicalSpecs />
       </Element>
 
       <Element name="contact" className="element-container">
-        <ContactForm/>
-        <SocialMediaCard 
-          name="SunnyLab" 
-          userName="sunnylab.cl" 
-          instagram="https://www.instagram.com/sunnylab.cl" 
-          youtube="https://www.youtube.com/@sunnylab.cl" 
-          tiktok="https://www.tiktok.com/@sunnylab.cl" 
+        <ContactForm />
+        <SocialMediaCard
+          name="SunnyLab"
+          userName="sunnylab.cl"
+          instagram="https://www.instagram.com/sunnylab.cl"
+          youtube="https://www.youtube.com/@sunnylab.cl"
+          tiktok="https://www.tiktok.com/@sunnylab.cl"
           spotify="https://open.spotify.com/intl-es/artist/5vhJr6XGIQ5CA7Ub5pVLjj"
         />
       </Element>
