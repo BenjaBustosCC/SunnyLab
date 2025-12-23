@@ -1,0 +1,30 @@
+.body {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* ahora ocupa 60% del alto de la pantalla */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('/estudio.png') center/cover no-repeat;
+    color: #fff;
+    z-index: 1;
+}
+
+.body::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.body-text {
+    font-size: 35px;
+    color: #fef3ce; 
+    max-width: 1000px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid #fef3ce;
+}

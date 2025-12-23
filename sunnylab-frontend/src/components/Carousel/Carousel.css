@@ -1,0 +1,121 @@
+.carousel-container {
+  width: 100%;
+  max-width: 1400px; /* prueba con 1200px o 1400px */
+  margin: 0 auto;
+}
+
+.slide-content img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: brightness(50%);         /* oscurece */
+  transition: filter 0.6s ease-in-out;
+}
+
+/* La imagen activa se ilumina */
+.swiper-slide-active img {
+  filter: brightness(100%);        /* ilumina */
+}
+
+/* También podrías aplicar menos oscuridad a las que están al costado */
+.swiper-slide-prev img,
+.swiper-slide-next img {
+  filter: brightness(70%);         /* semi oscura */
+}
+/* Texto sobre imagen */
+.carousel-text {
+  position: absolute;
+  top: 50%;              /* mitad vertical */
+  left: 50%;             /* mitad horizontal */
+  transform: translate(-50%, -50%); /* centra exacto */
+  color: #fff;
+  text-align: center;    /* centra el texto dentro del bloque */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+  width: 100%;           /* opcional, hace que ocupe todo el ancho */
+  padding: 0 20px;       /* opcional, para que no quede pegado a los bordes */
+}
+
+.carousel-text h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Flechas */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FEF3CE; /* tu dorado suave */
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #C48F00; /* dorado más fuerte en hover */
+}
+
+/* Bullets */
+.swiper-pagination-bullet {
+  background: #444; /* gris neutro para inactivos */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FEF3CE; /* dorado suave activo */
+} 
+
+/* Modal - fondo oscuro */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* oscurece todo el fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background: #222;
+  color: #FEF3CE;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Botón de cerrar */
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #FEF3CE;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background: #e5d9b8;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #26294C, #591335, #E3916B);
+  font-family: system-ui;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* apila header + contenido */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
