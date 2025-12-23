@@ -7,35 +7,46 @@ import Services from './components/Services/Services'
 import TechnicalSpecs from './components/TechnicalSpecs/TechnicalSpecs'
 import ContactForm from './components/ContactForm/ContactForm'
 import { Element } from "react-scroll";
+import { useState } from 'react';
+import AdminPanel from './components/AdminPanel/AdminPanel'
 
 function App() {
+  const [isAdmin, setIsAdmin] = useState(false);
+
   return (
     <div className='App'>
-      <Header />
-      <Element name="hero" className="element-container" style={{ paddingTop: '130px' }}>
-        <Hero />
-        <Carousel />
-      </Element>
+      <Header isAdmin={isAdmin} setIsAdmin={setIsAdmin} />
 
-      <Element name="services" className="element-container">
-        <Services />
-      </Element>
+      {isAdmin ? (
+        <AdminPanel />
+      ) : (
+        <>
+          <Element name="hero" className="element-container" style={{ paddingTop: '130px' }}>
+            <Hero />
+            <Carousel />
+          </Element>
 
-      <Element name="technical-specs" className="element-container">
-        <TechnicalSpecs />
-      </Element>
+          <Element name="services" className="element-container">
+            <Services />
+          </Element>
 
-      <Element name="contact" className="element-container">
-        <ContactForm />
-        <SocialMediaCard
-          name="SunnyLab"
-          userName="sunnylab.cl"
-          instagram="https://www.instagram.com/sunnylab.cl"
-          youtube="https://www.youtube.com/@sunnylab.cl"
-          tiktok="https://www.tiktok.com/@sunnylab.cl"
-          spotify="https://open.spotify.com/intl-es/artist/5vhJr6XGIQ5CA7Ub5pVLjj"
-        />
-      </Element>
+          <Element name="technical-specs" className="element-container">
+            <TechnicalSpecs />
+          </Element>
+
+          <Element name="contact" className="element-container">
+            <ContactForm />
+            <SocialMediaCard
+              name="SunnyLab"
+              userName="sunnylab.cl"
+              instagram="https://www.instagram.com/sunnylab.cl"
+              youtube="https://www.youtube.com/@sunnylab.cl"
+              tiktok="https://www.tiktok.com/@sunnylab.cl"
+              spotify="https://open.spotify.com/intl-es/artist/5vhJr6XGIQ5CA7Ub5pVLjj"
+            />
+          </Element>
+        </>
+      )}
     </div>
   );
 }
